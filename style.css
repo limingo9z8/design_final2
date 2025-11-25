@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: black;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+}
+
+/* Slider */
+.slider {
+    margin-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background: black;
+}
+
+/* Project Page */
+.project-section {
+    padding: 150px 40px 60px;
+}
+
+.project-section h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개씩 */
+    gap: 30px; /* 카드 간 간격 조금 더 넓히면 고급 */
+}
+
+.project-item img {
+    width: 100%;
+    height: 440px;  /* ← 세로 직사각형 */
+    object-fit: cover;
+    border-radius: 4px;   /* optional: 부드러운 고급감 */
+    background: #222;
+}
+
+.slider {
+    margin-top: 120px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100vh;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo a:hover {
+    opacity: 0.7;
+}
+/* ABOUT PAGE */
+.about-section {
+    padding: 150px 40px 80px;
+    max-width: 1100px;
+}
+
+.about-section h1 {
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.15;
+}
+
+.about-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 60px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 60px 0;
+}
+
+/* Partners */
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.partner-grid img {
+    width: 120px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+/* hover 애니메이션 */
+.partner-grid img:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* Service */
+.service-table {
+    display: flex;
+    gap: 50px;
+    line-height: 1.7;
+}
+
+.service-table h3 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.service-table p {
+    color: #ccc;
+}
+
+/* Awards / Exhibition */
+.award-list .row {
+    display: flex;
+    gap: 20px;
+    padding: 8px 0;
+    color: #ccc;
+}
+
+.award-list span {
+    width: 70px;
+    color: white;
+}
+
+/* Fade Hover Animation */
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    opacity: 0.6;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="logo">o9.z8</div>
+    <nav>
+        <a href="about.html">ABOUT</a>
+        <a href="project.html">PROJECT</a>
+        <a href="#">KV</a>
+    </nav>
+</header>
+
+<!-- Image Slider -->
+<section class="slider">
+    <div class="slides">
+        <div class="slide"><img src="images/1-6.jpg" alt=""></div>
+        <div class="slide"><img src="images/1-11.jpg" alt=""></div>
+        <div class="slide"><img src="images/1-8.jpg" alt=""></div>
+    </div>
+
+    <!-- arrows -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-left">
+        <h3>o9.z8</h3>
+        <p>Office<br>2F, 33, Samseong-ro 107-gil, Gangnam-gu, Seoul</p>
+    </div>
+    <div class="footer-right">
+    <p>
+        Contact
+        <br><br> <!-- Contact 밑에 한 줄 띄기 -->
+        Instagram<br>
+        yealim0928@naver.com
+    </p>
+</div>
+</footer>
+
+<script>
+let index = 0;
+const slides = document.querySelector(".slides");
+const total = document.querySelectorAll(".slide").length;
+
+document.querySelector(".next").addEventListener("click", () => {
+    index = (index + 1) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+    index = (index - 1 + total) % total;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+});
+</script>
+
+</body>
+</html>
